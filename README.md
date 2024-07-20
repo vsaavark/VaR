@@ -6,12 +6,12 @@ Welcome to my portfolio of financial risk management projects! This repository c
 
 # Value at Risk (VaR) - Historical Method
 
-Project Descriptions
+Project Description
 
 This project implements the Historical Method for calculating Value at Risk (VaR). VaR is a statistical measure used to assess the risk of loss on a portfolio. The Historical Method uses historical data to estimate the potential loss over a specified time period with a given confidence level.
 
 # Value at Risk (VaR) - Monte Carlo Method
 
-Project Descriptions
+Project Description
 
 This project demonstrates the Monte Carlo simulation method for calculating Value at Risk (VaR). Monte Carlo simulations use random sampling and statistical modeling to estimate the potential loss in a portfolio under various scenarios.
