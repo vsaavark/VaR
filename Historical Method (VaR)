@@ -1,0 +1,79 @@
+# 1. Objective/Purpose of the Project
+
+The purpose of this project is to conduct stress testing on ABC Company’s portfolio, which includes assets such as SPY, BND, GLD, QQQ, and VTI, using the historical method for calculating Value at Risk (VaR). The goal is to evaluate the potential financial risk the company could face during periods of market stress, using data from the last 15 years to simulate the worst-case scenarios.
+The analysis will help ABC Company understand how its portfolio may perform under adverse market conditions and quantify the potential losses over a specified time frame, providing insights for better risk management decisions.
+
+# 2. Current Practices and Limitations
+
+Currently, ABC Company uses basic financial metrics to assess portfolio performance, but lacks a robust method for stress testing under extreme market conditions. Without stress testing, the company may not be fully aware of the risks during market downturns, leading to unexpected losses.
+
+# 3. Innovative Approach
+
+This project uses the historical method for VaR calculation to conduct stress testing. Unlike parametric models that rely on statistical assumptions (like normal distribution), the historical method does not assume a specific distribution for asset returns. Instead, it uses real past market performance to evaluate risk, which makes it particularly effective during periods of stress.
+
+The project will:
+Use historical stock prices from the past 15 years to calculate daily log returns.
+Generate a portfolio of the chosen assets and apply equal weights to simulate the portfolio.
+Perform stress testing using the historical method to compute VaR at a 95% confidence level, providing a measure of the worst expected loss over a given time horizon, based on historical data.
+
+#4. Stakeholders and Impact
+
+The key stakeholders include the risk management and investment teams of ABC Company. By stress testing the portfolio using historical market data, these teams will gain insights into potential losses under extreme market conditions. This will help them make more informed decisions about adjusting the portfolio, hedging risks, or even liquidating positions in times of financial distress.
+
+#5. Risks and Rewards
+
+## Risks:
+The historical method assumes that past market behavior is indicative of future performance. This may not hold true during unprecedented events or future black swan events.
+The results are only as good as the historical data; if the data set misses significant market events, the model may underestimate risk.
+## Rewards:
+By simulating real historical scenarios, this method provides a realistic view of potential losses during times of stress, unlike parametric methods that assume returns are normally distributed.
+The stress testing results enable more resilient portfolio construction by identifying potential weak points in the current asset mix.
+
+# 6. Cost and Resources
+
+This project requires no major financial investment, relying solely on free libraries like yfinance, pandas, and numpy. The most significant resource needed is time and analytical expertise, as the Data Analyst needs to perform calculations, interpret the results, and provide actionable insights. The project is estimated to take approximately 20 hours.
+
+# 7. Timeline and Milestones
+
+Week 1: Data gathering for the assets (SPY, BND, GLD, QQQ, VTI) and calculation of daily log returns.
+Week 2: Build a stress test model using the historical method for VaR calculation.
+Week 3: Analyze the results, including VaR calculations and portfolio performance under stressed market conditions.
+Week 4: Final report preparation and presentation to the risk management team.
+
+# 8. Success Metrics
+
+The project will be deemed successful if:
+
+The historical VaR is calculated accurately at a 95% confidence level.
+The stress testing simulates realistic worst-case scenarios that provide actionable insights for risk management.
+The report offers clear guidance on portfolio adjustments based on stress testing results.
+
+### Key Findings
+Portfolio Composition: An equally weighted portfolio consisting of SPY, BND, GLD, QQQ, and VTI was analyzed.
+
+### Stress Testing with VaR:
+Historical VaR at 95% Confidence Level: The analysis revealed that the maximum expected loss over a 5-day window is $[Insert VaR Amount].
+This means that there is a 95% chance that the portfolio will not lose more than this amount over any given 5-day period, based on historical data.
+
+### Metrics Explained:
+Volatility: The degree of variation in portfolio returns. Higher volatility signals greater risk, as prices can swing widely in a short period.
+Beta: This metric reflects the portfolio's sensitivity to overall market movements. A beta greater than 1 means the portfolio is more volatile than the market, while a beta less than 1 means it is less volatile.
+Value at Risk (VaR): VaR provides a statistical measure of the worst expected loss under normal market conditions over a specific time frame. It is particularly useful in stress testing as it offers a clear threshold for potential loss in adverse scenarios.
+Maximum Drawdown: This represents the largest decline from a peak in the portfolio’s value, showing the most the portfolio could have lost during the analyzed period.
+
+### Why Use the Historical Method for VaR?
+The historical method is preferred in this scenario for several reasons:
+
+Reflects Real-World Events: Since it directly uses historical price data, it reflects actual market events, including past periods of financial stress.
+No Assumption of Normality: Unlike the parametric VaR, which assumes returns follow a normal distribution, the historical method does not require such assumptions, making it more realistic, especially for stress testing.
+Focus on Tail Risk: By focusing on the actual past losses, it highlights the risk of extreme events, which is crucial when assessing portfolio performance in periods of high market volatility.
+
+### Advice for the Investor
+Based on the stress testing results:
+
+The 95% VaR suggests that in most cases, the portfolio will not lose more than $[Insert VaR Amount] over a 5-day window.
+However, the analysis highlights the need to consider the tail risks, particularly for high-beta assets like SPY and QQQ, which may experience larger-than-expected losses during times of market stress.
+It is advisable for ABC Company to review its risk tolerance and consider diversification strategies to reduce exposure to volatile assets. In times of financial uncertainty, hedging instruments such as bonds (like BND) and gold (GLD) can provide stability to the portfolio.
+
+# Summary
+This stress testing project calculates the Value at Risk (VaR) for a portfolio using the historical method. It evaluates how the portfolio might perform during periods of financial stress, based on real historical market data. The findings provide clear insights into the potential risks, enabling ABC Company to take informed decisions about portfolio adjustments and risk mitigation strategies.
